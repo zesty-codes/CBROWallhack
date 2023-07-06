@@ -33,5 +33,9 @@ game.Players.PlayerAdded:Connect(function(v)
             if v.Team == lplr.Team then return nil end
             add_player(v)
         end)
-    end
+    end -- relaunch
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zesty-codes/CBROWallhack/main/wallhack.lua"))()
+end)
+lplr.CharacterAdded:Connect(function() -- relaunch
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zesty-codes/CBROWallhack/main/wallhack.lua"))()
 end)
